@@ -1,16 +1,15 @@
 import os
 import io
 import re
-import json
 import uuid
+import base64
+import requests
+
 from datetime import datetime, date
 
 import streamlit as st
 import pandas as pd
-import gspread
-from google.oauth2.service_account import Credentials
-from googleapiclient.discovery import build
-from googleapiclient.http import MediaIoBaseUpload
+
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
 from reportlab.lib.units import mm

@@ -89,8 +89,16 @@ def make_pdf(data, photo_bytes=None, signature_bytes=None):
         c.drawCentredString(photo_x + photo_w / 2, photo_y + photo_h / 2, "Photograph")
 
     y = H - 98 * mm
-    fields = [
-        ("Name", data["Name"]),
-        ("Date of Birth", data["Date of Birth"]),
-        ("NID No.", data["NID No."]),
-        ("Father's Name", data["Father's Name"]),
+    fields = [fields = [
+    ("Name", data["Name"]),
+    ("Date of Birth", data["Date of Birth"]),
+    ("NID No.", data["NID No."]),
+    ("Father's Name", data["Father's Name"]),
+    ("Mother's Name", data["Mother's Name"]),
+    ("Permanent Address", data["Permanent Address"]),
+    ("Present Address", data["Present Address"]),
+    ("Contact No. 1", data["Contact No. 1"]),
+    ("Contact No. 2", data["Contact No. 2"]),
+    ("E-mail Address", data["Email Address"]),
+    ("Membership Fee (Tk.)", str(data["Membership Fee (Tk.)"])),
+]
